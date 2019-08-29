@@ -10,7 +10,7 @@ council_id = 'S12000048'
 
 search_scraper = HashOnlyScraper(search_url, council_id, 'datasets', 'json')
 search_scraper.scrape()
-stations_scraper = GeoJsonScraper(stations_url, council_id, 'utf-8', 'stations', key='OBJECTID')
+stations_scraper = GeoJsonScraper(stations_url, council_id, 'utf-8', 'stations', key='FID')
 stations_scraper.scrape()
-districts_scraper = GeoJsonScraper(districts_url, council_id, 'utf-8', 'districts', key='OBJECTID')
+districts_scraper = GeoJsonScraper(districts_url, council_id, 'utf-8', 'districts', key='FID')
 districts_scraper.scrape()
